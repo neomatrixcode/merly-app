@@ -11,4 +11,4 @@ server = Merly.app()
     </html>
   ")
 
-server.start("127.0.0.1", ∈("PORT", keys(ENV)) ? parse(Int, ENV["PORT"]) : 5000)
+server.start("0.0.0.0", ∈("PORT", keys(ENV)) ? parse(Int, ENV["PORT"]) : 5000)
