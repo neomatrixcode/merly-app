@@ -1,7 +1,7 @@
 using Merly
 
 server = Merly.app()
-  @page "/" "Hello World!"
+  @page "/" "Hello, running a server from <b>Julia</b>!!! :3"
 
   server.notfound("
     <!DOCTYPE html>
