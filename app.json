@@ -5,19 +5,6 @@
   "website": "https://github.com/codeneomatrix/merly-app",
   "repository": "https://github.com/codeneomatrix/merly-app",
   "success_url": "/",
-  "scripts": {
-    "postdeploy": "bundle exec julia app.jl"
-  },
-  "env": {
-    "SECRET_TOKEN": {
-      "description": "A secret key for verifying the integrity of signed cookies.",
-      "generator": "secret"
-    },
-    "WEB_CONCURRENCY": {
-      "description": "The number of processes to run.",
-      "value": "5"
-    }
-  },
   "formation": {
     "web": {
       "quantity": 2,
