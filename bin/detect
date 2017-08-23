@@ -1,4 +1,0 @@
-#!/bin/sh
-
-echo "heroku-buildpack-julia"
-exit 0
