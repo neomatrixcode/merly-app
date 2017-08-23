@@ -4,9 +4,12 @@
 "description": "example of Merly app",
 "main": "app.jl",
 
+"buildpacks": [
+   {
+     "url": "https://github.com/codeneomatrix/heroku-buildpack-julia"
+   }
+ ],
 "scripts": {
-"postinstall": "cd bin && bash compile",
-"build:server": "(julia package.jl)",
 "start": "(julia app.jl)"
 },
 
