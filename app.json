@@ -4,7 +4,6 @@
   "keywords": [],
   "website": "https://github.com/codeneomatrix/merly-app",
   "repository": "https://github.com/codeneomatrix/merly-app",
-  "logo": "",
   "success_url": "/",
   "scripts": {
     "postdeploy": "bundle exec julia app.jl"
