@@ -1,11 +1,7 @@
 using Merly
 
-server = Merly.app(ur,"jl")
+server = Merly.app()
   @page "/" "Hello World!"
-  @page "/hola/:usr" "<b>Hello {{usr}}!</b>"
-  @route GET "/get/:data" begin
-    "get this back: {{data}}"
-  end
 
   server.notfound("
     <!DOCTYPE html>
@@ -15,5 +11,4 @@ server = Merly.app(ur,"jl")
     </html>
   ")
 
-  server.start("localhost",
-    ∈("PORT", keys(ENV)) ? parse(Int, ENV["PORT"]) : 5000)
+server.start("127.0.0.1", ∈("PORT", keys(ENV)) ? parse(Int, ENV["PORT"]) : 5000)
