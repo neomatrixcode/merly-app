@@ -15,4 +15,5 @@ server = Merly.app(ur,"jl")
     </html>
   ")
 
-  server.start("$host", port)
+  server.start("localhost",
+    ∈("PORT", keys(ENV)) ? parse(Int, ENV["PORT"]) : 5000)
