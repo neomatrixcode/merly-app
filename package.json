@@ -1,0 +1,27 @@
+{
+"name": "Merly app",
+"version": "1.0.0",
+"description": "example of Merly app",
+"main": "app.jl",
+
+"scripts": {
+"postinstall": "cd bin && bash compile",
+"build:server": "(julia package.jl)",
+"start": "(julia app.jl)"
+},
+
+"repository": {
+"url": "https://github.com/codeneomatrix/merly-app.git",
+"type": "git"
+},
+
+"author": "neomatrix",
+"license": "MIT",
+"bugs": {
+"url": "https://github.com/codeneomatrix/merly-app.git/issues"
+},
+"homepage": "https://github.com/codeneomatrix/merly-app.git",
+"dependencies": {},
+"devDependencies": {},
+"cacheDirectories": []
+}
