@@ -1,7 +1,7 @@
 using Merly
 
 server = Merly.app()
-  @page "/" "Hello, running a server from <b>Julia</b>!!! :3"
+  @page "/" "Hello, running a server from <b>Julia 1.0</b>!!! :3"
 
   server.notfound("
     <!DOCTYPE html>
@@ -11,4 +11,4 @@ server = Merly.app()
     </html>
   ")
 
-server.start("0.0.0.0", ∈("PORT", keys(ENV)) ? parse(Int, ENV["PORT"]) : 5000)
+server.start(Dict("host" => "0.0.0.0","port" => (∈("PORT", keys(ENV)) ? parse(Int, ENV["PORT"]) : 5000)))
