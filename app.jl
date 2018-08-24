@@ -1,7 +1,11 @@
 using Merly
 
 server = Merly.app()
-  @page "/" "Hello, running a server from <b>Julia 1.0</b>!!! :3"
+
+  @page "/" begin
+  res.headers["Content-Type"]= "text/html"
+  "Hello, running a server from <b>Julia 1.0</b>!!! :3"
+  end
 
   server.notfound("
     <!DOCTYPE html>
