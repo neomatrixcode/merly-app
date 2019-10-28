@@ -5,6 +5,7 @@ server.webserverpath("/app")
 
   @page "/" begin
   res.headers["Content-Type"]= "text/html"
+  @info("pwd",pwd())
   return File("index.html")
   end
 
