@@ -1,10 +1,11 @@
 using Merly
 
 server = Merly.app()
+server.webserverpath("/app")
 
   @page "/" begin
   res.headers["Content-Type"]= "text/html"
-  "Hello, running a server from <b>Julia 1.0</b>!!! :3"
+  return File("index.html")
   end
 
   server.notfound("
