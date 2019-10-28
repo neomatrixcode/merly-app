@@ -3,11 +3,7 @@ using Merly
 server = Merly.app()
 server.webserverpath("/app")
 
-  @page "/" begin
-  res.headers["Content-Type"]= "text/html"
-  @info("pwd",pwd())
-  return File("index.html")
-  end
+  @page "/" File("index.html")
 
   server.notfound("
     <!DOCTYPE html>
