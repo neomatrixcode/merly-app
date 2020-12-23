@@ -5,7 +5,7 @@ server.webserverpath("/app")
 
   @page "/" begin
   res.headers["Content-Type"]= "text/html"
-  "<h1> Hello, running a server from <b>Julia 1.2.0</b>!!! :3 </h1>"
+  "<h1> Hello, running a server from <b>Julia 1.5.3</b>!!! :3 </h1>"
   end
 
   server.notfound("

@@ -2,5 +2,5 @@
 
 ## Versions
 
-* Buildpack: `0.4`
-* Julia: `1.2.0`
+* Buildpack: `0.5`
+* Julia: `1.5.3`
