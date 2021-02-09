@@ -1,5 +1,6 @@
 using Merly
 
+webserverpath("/app")
 webserverfiles("css")
 
 content= File("merlyapp.html")
