@@ -2,8 +2,8 @@
   "name": "Merly app",
   "description": "",
   "keywords": [],
-  "website": "https://github.com/codeneomatrix/merly-app",
-  "repository": "https://github.com/codeneomatrix/merly-app",
+  "website": "https://github.com/neomatrixcode/merly-app",
+  "repository": "https://github.com/neomatrixcode/merly-app",
   "success_url": "/",
   "formation": {
     "web": {
@@ -14,7 +14,7 @@
   "image": "",
   "buildpacks": [
     {
-      "url": "https://github.com/codeneomatrix/heroku-buildpack-julia"
+      "url": "https://github.com/neomatrixcode/heroku-buildpack-julia"
     }
   ],
   "environments": {
